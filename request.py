@@ -30,3 +30,4 @@ def request():
     sluglist=requests.get("http://saral.navgurukul.org/api/courses/"+ str(user)+"/exercise/getBySlug?slug=" + slug[slugname])
     b=sluglist.json()
     print("CONTENT",b["content"])
+request()
